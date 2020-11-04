@@ -1,10 +1,10 @@
 version: '3.7'
 services:
   base:
-    image: stackhawk/vuln-graphql
+    image: stackhawk/vuln-graphql-api
     container_name: vuln-graphql
     build:
-      dockerfile: Dockerfile
+      dockerfile: ./Dockerfile
       context: .
       args:
         - SERVER_PORT
