@@ -24,13 +24,7 @@ COPY --chown=app ./app /graphql
 
 WORKDIR /graphql
 
-ARG SERVER_PORT=4000
-
-ENV SERVER_PORT=${SERVER_PORT}
-
-EXPOSE ${SERVER_PORT}:${SERVER_PORT}
-
-RUN sed -i'' -e "s/%SERVER_PORT%/${SERVER_PORT}/g" /graphql/app.ts
+EXPOSE 9000 3000
 
 RUN ln -s /usr/bin/python3 /usr/bin/python
 

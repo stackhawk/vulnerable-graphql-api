@@ -6,11 +6,7 @@ services:
     build:
       dockerfile: ./Dockerfile
       context: .
-      args:
-        - SERVER_PORT
-    environment:
-      - SERVER_PORT=${SERVER_PORT:-3000}
     ports:
-      - ${SERVER_PORT:-3000}:${SERVER_PORT:-3000}
+      - ${SERVER_PORT:-3000}:3000
     entrypoint:
       - docker-entrypoint.sh
