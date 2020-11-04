@@ -4,11 +4,14 @@ This fork of [vulnerable-graphql-api](https://github.com/CarveSystems/vulnerable
 and cleans up the Docker build for quick deployment and testing with docker-compose. 
 
 ## Docker Build
-
- - Make sure _docker-compose_ is present on the system.
- - Set `SERVER_PORT` in the environment and run `docker-compose up` 
  
 ```bash
-SERVER_PORT=3000
-docker-compose up
+docker-compose --build up
+```
+
+or...
+
+```bash
+# docker build -t stackhawk/vuln-graphql-api .`
+# docker run --rm -ti --name vuln-graphql-api -p 3000:3000 stackhawk/vuln-graphql-api
 ```
