@@ -1,4 +1,5 @@
-# vuln-graphql-api
+#. This repo has been archived and now lives at https://github.com/kaakaww/vuln-graphql-api
+## vuln-graphql-api
 
 This fork of [vulnerable-graphql-api](https://github.com/CarveSystems/vulnerable-graphql-api) simplifies 
 and cleans up the Docker build for quick deployment and testing with docker-compose. 
